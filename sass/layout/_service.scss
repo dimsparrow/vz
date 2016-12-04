@@ -1,0 +1,60 @@
+.section-service {
+	.holder-services {
+		padding: 0 6% 0 8%;
+	}
+	.menu-services {
+		padding: 0 0 20%;
+		font-size: 21px;
+		position: relative;
+		text-transform: uppercase;
+		li {
+			padding: 17px 0;
+		}
+		a {
+			color: #737373;
+			&:hover {
+				color: #b3b3b3;
+				& + .text-service {
+					display: block;
+				}
+			}
+		}
+		.text-service {
+			width: 40%;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			display: none;
+			&:after {
+				content: 'P';
+				position: absolute;
+				font-size: 72px;
+				top: -30px;
+				left: -23px;
+				color: #5d392d;
+			}
+		}
+		.text-i {
+			&:after {
+				content: 'I';
+				left: -12px;
+			}
+		}
+		.text-w {
+			&:after {
+				content: 'W';
+			}
+		}
+		.title-service {
+			margin: 0 0 18px;
+			position: relative;
+			z-index: 1;
+		}
+		.description-service {
+			font-size: 12px;
+			line-height: 2;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}

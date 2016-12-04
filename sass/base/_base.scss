@@ -1,0 +1,52 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: $bg-color;
+}
+a {
+	text-decoration: none;
+}
+::-webkit-input-placeholder,
+:-ms-input-placeholder{ color: #a5a7ae; }
+:-moz-placeholder,
+::-moz-placeholder{
+	color: #a5a7ae;
+	opacity: 1;
+}
+p {
+	margin: 0 0 10px;
+	line-height: 1.6;
+}
+.clearfix {
+	@include clearfix;
+}
+.container {
+	@include container (1170px, 0 10%);
+	margin: 0 auto;
+}
+.title {
+	text-transform: uppercase;
+	font-size: 52px;
+	color: #fff;
+	letter-spacing: 40px;
+	margin: 0 0 35px;
+}
+.title-section {
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #fff;
+	letter-spacing: 20px;
+	margin: 0 0 15%;
+	position: relative;
+	display: inline-block;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -35px;
+		height: 3px;
+		width: 120%;
+		background: #ff4200;
+	}
+}

@@ -1,0 +1,44 @@
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+	height: 15px;
+	width: 15px;
+	margin: 0;
+	background: #fff;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+	width: 15px;
+	height: 15px;
+	background: #737373;
+	margin: 0;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+	width: 15px;
+	height: 15px;
+	margin: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+	margin: 15px 7px;
+}
+#fp-nav ul li .fp-tooltip {
+	top: 7px;
+}
+#fp-nav ul li a.active .fp-tooltip {
+	opacity: none;
+	width: inherit;
+}
+
+#fp-nav ul li .fp-tooltip.left {
+	left: 47px;
+}
+.fp-slidesNav.bottom {
+	bottom: 23.6%;
+}
+.fp-slidesNav {
+	left: inherit;
+	right: 27%;
+}
