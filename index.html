@@ -3,14 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>vz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/all.css">
 	<script src="js/jquery-3.1.1.js"></script>
-	<script defer src="js/map.js"></script>
-	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvfBWqt9KIoigYOsWY5S-nqOlPwZma7YE&callback=initMap" ></script>
 	<script defer src="js/jquery.fullPage.js"></script>
 	<script defer src="js/index.js"></script>
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvfBWqt9KIoigYOsWY5S-nqOlPwZma7YE&callback=initMap"></script>
 </head>
 <body>
+	<div id="fp-nav">
+		<ul id="my_menu">
+			<li data-menuanchor="page1">
+				<a href="#page1" class="">
+					<span>1</span>
+				</a>
+			</li>
+			<li data-menuanchor="page2">
+				<a href="#page2" class="active">
+					<span>2</span>
+				</a>
+			</li>
+			<li data-menuanchor="page3">
+				<a href="#page3" class="">
+					<span>3</span>
+				</a>
+			</li>
+			<li data-menuanchor="page4">
+				<a href="#page4" class="">
+					<span>4</span>
+				</a>
+			</li>
+			<li data-menuanchor="page5">
+				<a href="#page5" class="">
+					<span>5</span>
+				</a>
+			</li>
+			<li data-menuanchor="page6">
+				<a href="#page6" class="">
+					<span>6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<div class="wrapper">
 		<div class="fullpages">
 			<div class="section section-home">
@@ -121,7 +155,7 @@
 											<img src="img/slide-1.jpg" width="270" height="268" alt="slide description">
 										</a>
 									</li>
-									<li class="top">
+									<li class="top none">
 										<a href="#">
 											<img src="img/slide-2.jpg" width="270" height="268" alt="slide description">
 										</a>
@@ -131,7 +165,7 @@
 											<a href="#" class="fa fa-link"></a>
 										</div>
 									</li>
-									<li>
+									<li class="none">
 										<a href="#">
 											<img src="img/slide-3.jpg" width="270" height="405" alt="slide description">
 										</a>
@@ -159,7 +193,7 @@
 											<img src="img/slide-1.jpg" width="270" height="268" alt="slide description">
 										</a>
 									</li>
-									<li class="top">
+									<li class="top none">
 										<a href="#">
 											<img src="img/slide-2.jpg" width="270" height="268" alt="slide description">
 										</a>
@@ -169,7 +203,7 @@
 											<a href="#" class="fa fa-link"></a>
 										</div>
 									</li>
-									<li>
+									<li class="none">
 										<a href="#">
 											<img src="img/slide-3.jpg" width="270" height="405" alt="slide description">
 										</a>
@@ -197,7 +231,7 @@
 											<img src="img/slide-1.jpg" width="270" height="268" alt="slide description">
 										</a>
 									</li>
-									<li class="top">
+									<li class="top none">
 										<a href="#">
 											<img src="img/slide-2.jpg" width="270" height="268" alt="slide description">
 										</a>
@@ -207,7 +241,7 @@
 											<a href="#" class="fa fa-link"></a>
 										</div>
 									</li>
-									<li>
+									<li class="none">
 										<a href="#">
 											<img src="img/slide-3.jpg" width="270" height="405" alt="slide description">
 										</a>
@@ -272,17 +306,19 @@
 						<div class="holder-form">
 							<form action="#" class="form-registration">
 								<fieldset>
-									<div class="row">
-										<input type="text" placeholder="Full Name">
+									<div class="row-two">
+										<input type="text" placeholder="Your Name">
+										<input type="email" placeholder="Your E-Mail">
+
 									</div>
 									<div class="row">
-										<input type="email" placeholder="Email Address">
+										<input type="text" placeholder="Your Topic">
 									</div>
 									<div class="row">
 										<textarea row="3" cols="1" placeholder="Message"></textarea>
 									</div>
-									<div class="row clearfix">
-										<input type="submit" value="Send">
+									<div class="row-submit clearfix">
+										<input type="submit" value="SEND MESSAGE">
 									</div>
 								</fieldset>
 							</form>

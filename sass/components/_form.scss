@@ -1,3 +1,52 @@
+.holder-form {
+	position: absolute;
+	bottom: 10%;
+	left: 7%;
+	background: #fff;
+	width: 630px;
+	padding: 48px 70px;
+	.row-two {
+		display: flex; 
+		justify-content: space-between;	
+		margin: 0 0 30px; 
+	}
+	input[type="text"],	input[type="email"] {
+		width: 47%;
+		padding: 16px;
+		border: 2px solid #ededed;
+		font: #{$font-size}/#{$line-height} $font-sans;
+	}
+	.row {
+		margin: 0 0 30px;
+		input[type="text"] {
+			width: 100%;
+		}
+		 textarea {
+		 	width: 100%;
+		 	padding: 16px;
+		 	border: 2px solid #ededed;
+		 	font: #{$font-size}/#{$line-height} $font-sans;
+		 	min-height: 150px;
+		 	max-height: 150px;
+		 	resize: vertical;
+		 	overflow: auto;
+		}
+	}
+	 input[type="submit"] {
+		border: 0;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 17px 30px;
+		background: #ff4200;
+	 }
+}
+
+@include media (desktop-large) {
+	.holder-form {
+		width: 320px;
+		padding: 15px; 
+	}
+}
 
 
 

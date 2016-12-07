@@ -87,3 +87,26 @@
 	}
 }
 
+@include media (desktop) {
+	.holder-title {
+		.holder-text {
+			padding-left: 20%;
+		}
+	}
+}
+@include media (mobile) {
+	.holder-title {
+		.title {
+			letter-spacing: inherit;
+		}
+		.description {
+			letter-spacing: inherit;
+		}
+		.more {
+			letter-spacing: inherit;
+		}
+		.holder-text {
+			padding-left: 0;
+		}
+	}
+}

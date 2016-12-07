@@ -2721,6 +2721,20 @@ p {
   .holder-title .holder-text {
     padding: 0 0 0 29%; }
 
+@media only screen and (max-width: 1023px) {
+  .holder-title .holder-text {
+    padding-left: 20%; } }
+
+@media only screen and (max-width: 767px) {
+  .holder-title .title {
+    letter-spacing: inherit; }
+  .holder-title .description {
+    letter-spacing: inherit; }
+  .holder-title .more {
+    letter-spacing: inherit; }
+  .holder-title .holder-text {
+    padding-left: 0; } }
+
 .section-about .title {
   color: #ff4200;
   letter-spacing: 30px;
@@ -2742,6 +2756,16 @@ p {
     height: 3px;
     width: 66%;
     background: #ededed; }
+
+@media only screen and (max-width: 1023px) {
+  .section-about .description {
+    width: 100%;
+    margin-left: 0; } }
+
+@media only screen and (max-width: 767px) {
+  .section-about .title {
+    letter-spacing: inherit;
+    margin-bottom: 30px; } }
 
 .section-service .holder-services {
   padding: 0 6% 0 8%; }
@@ -2787,6 +2811,16 @@ p {
     position: relative;
     z-index: 1;
     text-transform: none; }
+
+@media only screen and (max-width: 767px) {
+  .section-service .holder-services {
+    padding: 0; }
+  .section-service .title-section {
+    letter-spacing: inherit; }
+  .section-service .menu-services {
+    padding-bottom: 0; }
+    .section-service .menu-services a:hover + .text-service {
+      display: none; } }
 
 .section-portfolio .title-section {
   margin-bottom: 120px; }
@@ -2852,6 +2886,41 @@ p {
     .section-portfolio .menu a:hover {
       color: #fff; }
 
+@media only screen and (max-width: 1920px) {
+  .section-portfolio .menu {
+    width: 30%; }
+  .section-portfolio .menu-slide .cup .fa-link {
+    width: 30px;
+    height: 30px;
+    font-size: 16px; }
+    .section-portfolio .menu-slide .cup .fa-link:before {
+      top: 7px;
+      left: 8px; }
+  .section-portfolio .fp-slidesNav.bottom {
+    bottom: 17px; }
+  .section-portfolio .fp-slidesNav {
+    right: 50%; } }
+
+@media only screen and (max-width: 767px) {
+  .section-portfolio {
+    text-align: center; }
+    .section-portfolio .menu-slide {
+      padding-right: 0; }
+      .section-portfolio .menu-slide .none {
+        display: none; }
+      .section-portfolio .menu-slide li {
+        width: 60%; }
+    .section-portfolio .title-section {
+      margin-bottom: 60px;
+      letter-spacing: inherit; }
+    .section-portfolio .holder-menu {
+      padding: 0;
+      display: block; }
+    .section-portfolio .menu {
+      width: 100%; }
+      .section-portfolio .menu li {
+        margin-bottom: 5px; } }
+
 .section-blog .title-section {
   color: #333;
   margin-bottom: 135px; }
@@ -2896,6 +2965,16 @@ p {
 
 .section-blog .holder-block-b {
   width: 23%; }
+  .section-blog .holder-block-b .title-block {
+    position: relative; }
+    .section-blog .holder-block-b .title-block:after {
+      content: '';
+      height: 3px;
+      width: 100px;
+      top: 10px;
+      left: -115px;
+      background: #ff4200;
+      position: absolute; }
 
 .section-blog .holder-block {
   width: 30%; }
@@ -2915,23 +2994,51 @@ p {
     height: 3px;
     background: #ededed; }
 
+@media only screen and (max-width: 1920px) {
+  .section-blog .holder-block {
+    width: 33%; }
+  .section-blog .info-block li {
+    padding: 0 2px; }
+    .section-blog .info-block li:after {
+      content: none; } }
+
+@media only screen and (max-width: 767px) {
+  .section-blog .holder {
+    display: block; }
+  .section-blog .holder-img {
+    width: 100%;
+    margin-bottom: 15px; }
+  .section-blog .holder-block-b {
+    width: 100%; }
+    .section-blog .holder-block-b .title-block:after {
+      content: none; }
+  .section-blog .holder-block {
+    width: 100%; }
+  .section-blog .info-block li {
+    font-size: 11px; }
+  .section-blog .title-section {
+    letter-spacing: inherit;
+    padding: 40px 0;
+    margin-bottom: 0; }
+    .section-blog .title-section:after {
+      content: none; } }
+
 .holder-contact {
   height: 100%; }
 
 .contact {
   width: 44%;
   height: 100%;
-  position: relative; }
+  position: relative;
+  display: table; }
   .contact .holder-text {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
     padding: 0 5% 0 44%; }
   .contact .title-section {
     margin: 0 0 220px; }
+    .contact .title-section:after {
+      width: 110%; }
   .contact .holder-address {
     padding: 0 0 0 100px; }
   .contact .row {
@@ -2966,9 +3073,74 @@ p {
   position: relative; }
   .holder-map #map {
     height: 100%; }
-  .holder-map .holder-form {
-    position: absolute;
-    bottom: 10%;
-    left: 7%; }
+
+@media only screen and (max-width: 1920px) {
+  .contact .copyrigh {
+    left: 5%;
+    transform: none; }
+  .contact .title-section {
+    margin-bottom: 30px; }
+    .contact .title-section:after {
+      bottom: -10px; }
+  .contact .holder-text {
+    padding-left: 30%; } }
+
+@media only screen and (max-width: 1023px) {
+  .holder-map {
+    display: none; }
+  .contact {
+    width: 100%; }
+    .contact .copyrigh {
+      left: 50%;
+      transform: translateX(-50%); } }
+
+@media only screen and (max-width: 767px) {
+  .contact .holder-text {
+    padding: 0 5%; }
+  .contact .title-section {
+    letter-spacing: inherit; }
+  .contact .copyrigh {
+    font-size: 10px; } }
+
+.holder-form {
+  position: absolute;
+  bottom: 10%;
+  left: 7%;
+  background: #fff;
+  width: 630px;
+  padding: 48px 70px; }
+  .holder-form .row-two {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px; }
+  .holder-form input[type="text"], .holder-form input[type="email"] {
+    width: 47%;
+    padding: 16px;
+    border: 2px solid #ededed;
+    font: 12px/1.2 "AvenirBlack", Helvetica, sans-serif; }
+  .holder-form .row {
+    margin: 0 0 30px; }
+    .holder-form .row input[type="text"] {
+      width: 100%; }
+    .holder-form .row textarea {
+      width: 100%;
+      padding: 16px;
+      border: 2px solid #ededed;
+      font: 12px/1.2 "AvenirBlack", Helvetica, sans-serif;
+      min-height: 150px;
+      max-height: 150px;
+      resize: vertical;
+      overflow: auto; }
+  .holder-form input[type="submit"] {
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 17px 30px;
+    background: #ff4200; }
+
+@media only screen and (max-width: 1920px) {
+  .holder-form {
+    width: 320px;
+    padding: 15px; } }
 
 /*# sourceMappingURL=maps/all.css.map */

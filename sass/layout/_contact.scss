@@ -5,17 +5,17 @@
 	width: 44%;
 	height: 100%;
 	position: relative;
+	display: table;
 	.holder-text {
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-between;
-		flex-direction: column;
-		max-width: 400px;
-		margin: 0 auto;
+		display: table-cell;
+		vertical-align: middle;
 		padding: 0 5% 0 44%;
 	}
 	.title-section {
 		margin: 0 0 220px;
+		&:after {
+			width: 110%;
+		}
 	}
 	.holder-address {
 		padding: 0 0 0 100px;
@@ -65,9 +65,47 @@
 	#map {
 		height: 100%;
 	}
-	.holder-form {
-		position: absolute;
-		bottom: 10%;
-		left: 7%;
+}
+
+@include media (desktop-large) {
+	.contact {
+		.copyrigh {
+			left: 5%;
+			transform: none;
+		}
+		.title-section {
+			margin-bottom: 30px;
+			&:after {
+				bottom: -10px;
+			}
+		}
+		.holder-text {
+			padding-left: 30%;
+		}
+	}
+}
+@include media (desktop) {
+	.holder-map {
+		display: none;
+	}
+	.contact {
+		width: 100%;
+		.copyrigh {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+@include media (mobile) {
+	.contact {
+		.holder-text {
+			padding: 0 5%;
+		}
+		.title-section {
+			letter-spacing: inherit;
+		}
+		.copyrigh {
+			font-size: 10px;
+		}
 	}
 }

@@ -24,3 +24,22 @@
 		}
 	}
 }
+
+@include media (desktop) {
+	.section-about {
+		.description {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+@include media (mobile) {
+	.section-about {
+		.title {
+			letter-spacing: inherit;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+
