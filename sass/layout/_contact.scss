@@ -4,10 +4,70 @@
 .contact {
 	width: 44%;
 	height: 100%;
+	position: relative;
+	.holder-text {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: space-between;
+		flex-direction: column;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 0 5% 0 44%;
+	}
+	.title-section {
+		margin: 0 0 220px;
+	}
+	.holder-address {
+		padding: 0 0 0 100px;
+	}
+	.row {
+		position: relative;
+		margin: 0 0 40px;
+		&:before {
+			content: '\f003';
+			font: 24px/30px 'FontAwesome';
+			position: absolute;
+			top: -6px;
+			left: -53px;
+		}
+		.description {
+			line-height: 2;
+		}
+	}
+	.phone {
+		&:before {
+			content: '\f095';
+		}
+	}
+	.marker {
+		&:before {
+			content: '\f041';
+		}
+	}
+	.title-contact {
+		text-transform: uppercase;
+		margin: 0 0 20px;
+	}
+	.copyrigh {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 }
-#map {
+.holder-map {
 	width: 56%;
 	height: 100%;
 	background: #fff;
 	float: right;
+	position: relative;
+	#map {
+		height: 100%;
+	}
+	.holder-form {
+		position: absolute;
+		bottom: 10%;
+		left: 7%;
+	}
 }
