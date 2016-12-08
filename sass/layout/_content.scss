@@ -25,3 +25,12 @@
 	background-size: cover;
 }
 
+@include media (desktop) {
+	#fp-nav {
+		.active  {
+			.titles {
+				display: none;
+			}
+		}
+	}
+}

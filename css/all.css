@@ -274,6 +274,66 @@ html.fp-enabled,
   left: inherit;
   right: 27%; }
 
+#fp-nav #my_menu a {
+  display: inline-block; }
+
+#fp-nav ul a:hover span,
+#fp-nav ul li.active span {
+  background: #fff; }
+
+#fp-nav .page2 span {
+  background: #e6e6e6; }
+
+#fp-nav .page2 li.active span,
+#fp-nav .page5 li.active span,
+#fp-nav .page2 a:hover span,
+#fp-nav .page5 a:hover span {
+  background: #333; }
+
+#fp-nav ul li.active {
+  margin-top: 120px;
+  margin-bottom: 160px;
+  position: relative; }
+  #fp-nav ul li.active:after {
+    content: '';
+    width: 3px;
+    height: 100px;
+    background: #fff;
+    position: absolute;
+    top: 48px;
+    left: 12px; }
+
+#fp-nav .page2 li.active:after,
+#fp-nav .page5 li.active:after {
+  background: #333; }
+
+#fp-nav {
+  left: 5px;
+  top: 30%; }
+  #fp-nav a {
+    position: relative; }
+    #fp-nav a .number {
+      position: absolute;
+      top: -60px;
+      left: -5px;
+      font-size: 45px;
+      display: none;
+      color: #fff; }
+    #fp-nav a .titles {
+      position: absolute;
+      top: 5px;
+      left: 35px;
+      display: none;
+      color: #fff; }
+  #fp-nav .active .number {
+    display: block; }
+  #fp-nav .active .titles {
+    display: block; }
+  #fp-nav .page2 .number, #fp-nav .page5 .number {
+    color: #333; }
+  #fp-nav .page2 .titles, #fp-nav .page5 .titles {
+    color: #333; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2650,6 +2710,10 @@ p {
 
 .slide {
   background-size: cover; }
+
+@media only screen and (max-width: 1023px) {
+  #fp-nav .active .titles {
+    display: none; } }
 
 .holder-logo {
   padding: 30px 15px;

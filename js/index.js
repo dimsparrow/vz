@@ -13,7 +13,7 @@ var Homepage = (function () {
 			$('.fullpages').fullpage({
 				slidesNavigation: true,
 				controlArrows: false,
-				responsiveWidth: 767,
+				responsiveWidth: 768,
 				anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
 				menu: menu,
 				afterLoad: function (anchorLink) {
